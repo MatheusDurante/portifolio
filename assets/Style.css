@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+    padding: 1%;
+    background-color: rgb(25, 25, 25);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 20%;
+    font-size: 1.25rem;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.name {
+    font-size: 4.3rem;
+    font-family: 'DM Serif Display';
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.content__perfil {
+    display: flex;
+    width: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.content__perfil img {
+    margin-right: 2%;
+    margin-left: 20%;
+}
+
+.picture {
+    margin-top: 3%;
+    height: 300px;
+    width: 220px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+}
+
+.text {
+    margin-top: 3%;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    text-align: start;
+}
+
+.item__content {
+    margin-top: 2%;
+}
+
+.about {
+    padding-left: 25px;
+} 
+
+.skills_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 7rem;
+    gap: 2px;
+}
+
+.skill_picture {
+    margin-top: 3%;
+    height: 120px;
+    width: 100px;
+    border-radius: 25px;
+    font-size: 1.25rem;
+}
+
+.skill_name {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.foter {
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 80%;
+} 
+
+.subtitle {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.email {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1%;
+}
+
+@media (max-width: 1200px) {
+
+    .content {
+        padding: 5% 10%;
+    }
+
+    .content__perfil {
+        flex-direction: column;
+    }
+
+    .content__perfil img {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}

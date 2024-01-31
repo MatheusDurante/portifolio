@@ -1,0 +1,68 @@
+.social_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.button_one {
+    border: 2px solid rgb(0, 204, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    padding: 1% 2%; 
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button_one:hover {
+    background-color: rgb(0, 204, 0);
+    color: rgb(0, 0, 0);
+}
+
+.button_two {
+    border: 2px solid rgb(0, 204, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button_two:hover {
+    background-color: rgb(0, 204, 0);
+    border: 2px solid rgb(0, 204, 0);
+    color: rgb(0, 0, 0);
+}
+
+.low_affinity_button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    border-radius: 15px;
+    padding: 1%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.medium_affinity_button {
+    background-color: rgb(220, 100, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    border-radius: 15px;
+    padding: 1%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.greater_affinity_button {
+    background-color: rgb(0, 204, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    border-radius: 15px;
+    padding: 1%;
+    text-decoration: none;
+    text-align: center;
+}
