@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Rubik+Maps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap');
 
 body {
     background-color: rgb(15, 15, 15);
@@ -9,14 +10,87 @@ body {
     box-sizing: border-box;
 }
 
-.menu {
+header {
+    position: fixed;
+    padding: 15px 15px;
+}
+
+.main_menu {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-    padding: 1%;
-    background-color: rgb(25, 25, 25);
+    flex-direction: column;
+    gap: 6px;
 }
+
+.hamburguer {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 10%;
+    position: relative;
+}
+
+.hamburguer::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+    border-radius: 20px;
+    background: #fff;
+    transition: 1s ease;
+}
+
+.hamburguer::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    background: #fff;
+    transition: 1s ease;
+}
+
+#hamburguer:checked ~ label .hamburguer::after {
+    transform: rotate(225deg);
+    top: 45%;
+    left: 15%;
+}
+
+#hamburguer:checked ~ label .hamburguer::before {
+    transform: rotate(-225deg);
+    width: 70%;
+    height: 10%;
+    top: 45%;
+    left: 15%;
+}
+
+*/ animação do menu*/
+.main_menu {
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+  
+  #hamburguer:checked ~ label .main_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .main_menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+  }
+  
+  #hamburguer:checked ~ label .main_menu {
+    padding-top: 15px;
+    max-height: 500px;
+  }
 
 .content {
     display: flex;
@@ -24,7 +98,6 @@ body {
     padding: 10% 20%;
     font-size: 1.25rem;
     justify-content: center;
-    margin-top: 0%;
 }
 
 .name {
@@ -58,48 +131,44 @@ body {
 .text {
     margin-top: 3%;
     font-size: 1.25rem;
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
+    font-family: "Poppins", serif;
     text-align: start;
 }
 
 .item__content {
     margin-top: 2%;
+    line-height: 1.4;
 }
 
 .about {
     padding-left: 25px;
-} 
+}
 
 .skills_grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    max-width: 720px;
+    padding: 15px;
+    gap: 20px;
+    margin: auto;
+    text-align: center;
     justify-content: center;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    text-align: center;
-    align-items: center;
-    margin-top: 15%;
-    margin-left: 7rem;
-    gap: 2px;
-}
-
 .skill_picture {
-    margin-top: 3%;
+    margin-top: 25px;
     height: 120px;
     width: 100px;
     border-radius: 25px;
+    justify-content: center;
     font-size: 1.25rem;
 }
 
-.skill_name {
+.skill_name {   
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 1.25rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-family: "Poppins", serif;
 }
 
 .foter {
@@ -108,9 +177,10 @@ body {
 
 .line {
     width: 80%;
-} 
+}
 
 .subtitle {
+    font-family: "Poppins", serif;
     margin-top: 2%;
     text-align: center;
     font-size: 2rem;
@@ -122,6 +192,7 @@ i {
 }
 
 .email {
+    font-family: "Poppins", serif;
     text-align: center;
     font-size: 1.25rem;
     margin-top: 1%;
@@ -140,5 +211,16 @@ i {
     .content__perfil img {
         margin-left: 0%;
         margin-right: 0%;
+    }
+
+    .name {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .skills_grid {
+        max-width: 90%;
     }
 }

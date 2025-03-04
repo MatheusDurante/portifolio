@@ -1,8 +1,8 @@
 .main_color {
-    color: var(--cor-green);
+    color: var(--color-green);
 }
 
 :root {
-    --cor-green: rgb(0, 204, 0);
-    --cor-purple: rgb(160, 0, 160);
+    --color-green: rgb(0, 204, 0);
+    --color-purple: rgb(160, 0, 160);
 }

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./assets/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/Style.css">
     <link rel="stylesheet" href="./assets/colors.css">
     <link rel="stylesheet" href="./assets/botton.css">
@@ -14,30 +14,29 @@
 
 <body>
     <header>
-        <nav class="menu">
-            <a class="button_two" href="#about_me">About me</a>
-            <a class="button_two" href="#social_media">Social midia</a>
-            <a class="button_two" href="#skills">Skills</a>
-        </nav>
+        <input id="hamburguer" type="checkbox" style="display: none;">
+        <label for="hamburguer">
+            <div class="hamburguer"></div>
+            <nav class="main_menu">
+                <a class="button_two" href="#about_me">About me</a>
+                <a class="button_two" href="#skills">Skills</a>
+                <a class="button_two" href="#social_media">Social midia</a>
+            </nav>
     </header>
+
     <main class="content" id="about_me">
         <h1 class="name"> Matheus <strong class="main_color"> Durante </strong></h1>
         <section class="content__perfil">
-            <img class="picture" src="./assets/imagens/Perfil.jpeg" alt="user picture" />
+            <img class="picture" src="./assets/imagens/my_picture/MY_PICTURE.jpeg" alt="user picture" />
             <section class="text">
-                <p class="item__content"><strong class="main_color">Age:</strong> 18 years</p>
+                <p class="item__content"><strong class="main_color">Age:</strong> <span id="idade"></span> years</p>
                 <p class="item__content"><strong class="main_color">Nationality:</strong> Brazilian</p>
                 <p class="item__content"><strong class="main_color">Address:</strong> Marau, Brazil</p>
                 <p class="item__content"><strong class="main_color">Languages:</strong> Portuguese, English</p>
                 <p class="item__content"><strong class="main_color">Phone:</strong> +55 (54) 9 9626-3910</p>
                 <div>
-                    <p class="item__content"><strong class="about">I'm</strong> a student with Cience Compute, starting
-                        in February 2023 at
-                        ATITUS institute, my
-                        first contact with programing was one alura curse, after this event I discover my lover in the
-                        world
-                        of programming. Currently
-                        looking for a job in area.</p>
+                    <p class="item__content"><strong class="about">I'm</strong> a student with Cience Computer, starting
+                        in February 2023 at ATITUS institute, my first contact with programing was one alura curse, after this event I discover my lover in the  world of programming. Currently looking for a job in this area.</p>
                 </div>
             </section>
         </section>
@@ -46,43 +45,55 @@
             <div class="skill">
                 <img class="skill_picture" src="./assets/imagens/HTML.png" alt="HTML">
                 <div>
-                    <p class="skill_name">HTML</p>
-                    <p class="greater_affinity_button">Affyinity: Greater</p>
+                    <p class="skill_name">HTML 5</p>
                 </div>
             </div>
             <div class="skill">
                 <img class="skill_picture" src="./assets/imagens/CSS.png" alt="CSS">
                 <div>
-                    <p class="skill_name">CSS</p>
-                    <p class="greater_affinity_button">Affyinity: Greater</p>
+                    <p class="skill_name">CSS 3</p>
                 </div>
             </div>
             <div class="skill">
-                <img class="skill_picture" src="./assets/imagens/Javascript.jpg" alt="Javascript">
+                <img class="skill_picture" src="./assets/imagens/JAVASCRIPT.png" alt="Javascript">
                 <div>
                     <p class="skill_name">Javascript</p>
-                    <p class="medium_affinity_button">Affyinity: Medium</p>
                 </div>
             </div>
             <div class="skill">
-                <img class="skill_picture" src="./assets/imagens/Phyton.jpg" alt="Phyton">
+                <img class="skill_picture" src="./assets/imagens/POSTGRESS_SQL.png" alt="Phyton">
                 <div>
-                    <p class="skill_name">Phyton</p>
-                    <p class="low_affinity_button">Affyinity: Low</p>
+                    <p class="skill_name">Postgress SQL</p>
                 </div>
             </div>
             <div class="skill">
-                <img class="skill_picture" src="./assets/imagens/Java.png" alt="Java">
+                <img class="skill_picture" src="./assets/imagens/JAVA.png" alt="Java">
                 <div>
                     <p class="skill_name">Java</p>
-                    <p class="low_affinity_button">Affyinity: Low</p>
                 </div>
             </div>
             <div class="skill">
-                <img class="skill_picture" src="./assets/imagens/Swift.png" alt="Swift">
+                <img class="skill_picture" src="./assets/imagens/SWIFT.png" alt="Swift">
                 <div>
                     <p class="skill_name">Swift</p>
-                    <p class="medium_affinity_button">Affyinity: Medium</p>
+                </div>
+            </div>
+            <div class="skill">
+                <img class="skill_picture" src="./assets/imagens/GIT.png" alt="Swift">
+                <div>
+                    <p class="skill_name">GIT</p>
+                </div>
+            </div>
+            <div class="skill">
+                <img class="skill_picture" src="./assets/imagens/REACT.png" alt="Swift">
+                <div>
+                    <p class="skill_name">React</p>
+                </div>
+            </div>
+            <div class="skill">
+                <img class="skill_picture" src="./assets/imagens/PYTHON.png" alt="Swift">
+                <div>
+                    <p class="skill_name">Python</p>
                 </div>
             </div>
 
@@ -102,6 +113,7 @@
             <p class="email"><strong class="main_color">Email:</strong> matheusdurante9@gmail.com</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
