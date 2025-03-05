@@ -20,6 +20,7 @@ header {
     justify-content: center;
     flex-direction: column;
     gap: 6px;
+    background-color:  rgb(15, 15, 15);
 }
 
 .hamburguer {
